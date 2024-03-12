@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient_details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/threedot"
+                android:layout_gravity="start"
+                />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bed"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="Patient Details"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:hint="Patient Name"/>
+
+            <EditText
+                android:id="@+id/mob_no"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:hint="Mobile No"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="40dp">
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:hint="Age"
+                    />
+                <Spinner
+                    android:id="@+id/spin"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="30dp"
+                    android:hint="Gender"
+                    />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/problem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="40dp"
+                android:hint="Patients Problem"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/proceed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:background="#09C1D8"
+                android:text="PROCEED"
+                android:textColor="#F6F1F1"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
